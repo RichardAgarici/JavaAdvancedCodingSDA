@@ -17,9 +17,12 @@ public class Main {
         stringIntegerMap.put("Python", 1);
         stringIntegerMap.put("PHP", 0);
 
+
         printMapContent(stringIntegerMap);
 
-        System.out.println("-------------------------");
+        System.out.println("----------------");
+
+        printMapContentV2(stringIntegerMap);
     }
     public static void printMapContent(Map<String, Integer> inputMapContent) {
 /**
