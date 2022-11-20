@@ -21,7 +21,7 @@ public class Main {
 
         product.addRating(0);
         product.addRating(8);
-        
+
     }
 }
 
