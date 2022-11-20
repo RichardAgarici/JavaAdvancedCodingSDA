@@ -1,4 +1,4 @@
-package com.sda.richardagarici.advanced.coding;
+package com.sda.richardagarici.advanced.coding.collections;
 
 public class Main {
     public static void main(String[] args) {
