@@ -25,4 +25,12 @@ public class MoveDirection {
     public void setY(double y) {
         this.y = y;
     }
+
+    @Override
+    public String toString() {
+        return "MoveDirection{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
