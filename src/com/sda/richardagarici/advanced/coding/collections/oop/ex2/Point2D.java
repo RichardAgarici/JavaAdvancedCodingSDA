@@ -8,7 +8,7 @@ package com.sda.richardagarici.advanced.coding.collections.oop.ex2;
  * • circle circumference when calling double getPerimeter() method
  * • circle area when calling double getArea() method
  */
-public class Point2D {
+public class Point2D implements Movable{
 
     private double x;
     private double y;
@@ -16,6 +16,12 @@ public class Point2D {
     public Point2D(double x, double y) {
         this.x = x;
         this.y = y;
+    }
+
+    @Override
+    public void move(MoveDirection moveDirection) {
+        this.x += moveDirection.getX();
+        this.y += moveDirection.getY();
     }
 
     public double getX() {

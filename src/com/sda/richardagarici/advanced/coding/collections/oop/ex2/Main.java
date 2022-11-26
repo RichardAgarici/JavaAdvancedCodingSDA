@@ -10,5 +10,29 @@ public class Main {
         System.out.println("Radius is: "+circle.getRadius());
         System.out.println("Perimeter si: "+ circle.getPerimeter());
         System.out.println("Area is: "+ circle.getArea());
+
+        circle.move(new MoveDirection(2,3));
+
+        System.out.println("Radius is: "+circle.getRadius());
+        System.out.println("Perimeter si: "+ circle.getPerimeter());
+        System.out.println("Area is: "+ circle.getArea());
+
+        System.out.println("-------------------------------------");
+
+        point1.move(new MoveDirection(3,5));
+        System.out.println("Radius is: "+circle.getRadius());
+        System.out.println("Perimeter si: "+ circle.getPerimeter());
+        System.out.println("Area is: "+ circle.getArea());
+
+        circle.resize(5);
+
+        System.out.println("----------------");
+        System.out.println("Radius is: "+circle.getRadius());
+        System.out.println("Perimeter si: "+ circle.getPerimeter());
+        System.out.println("Area is: "+ circle.getArea());
+
+        
     }
+
+
 }
