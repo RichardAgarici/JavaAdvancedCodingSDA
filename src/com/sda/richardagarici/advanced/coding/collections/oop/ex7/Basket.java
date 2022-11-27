@@ -1,8 +1,7 @@
-package com.sda.richardagarici.advanced.coding.collections.oop.ex6;
+package com.sda.richardagarici.advanced.coding.collections.oop.ex7;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Create a Basket class that imitates a basket and stores the current number of items in the basket.
@@ -22,7 +21,7 @@ public class Basket {
         this.maxSize = maxSize;
     }
 
-    public void addToBasket(String product) {
+    public void addToBasket(String product) throws BasketFullException {
         if (products.size() < maxSize) {
             products.add(product);
         } else {
@@ -30,7 +29,7 @@ public class Basket {
         }
     }
 
-    public void removeFromBasket(String product) {
+    public void removeFromBasket(String product) throws BasketEmptyException {
         if (!products.isEmpty()) {
             products.remove(product);
         } else {
@@ -38,4 +37,11 @@ public class Basket {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Basket{" +
+                "products=" + products +
+                ", maxSize=" + maxSize +
+                '}';
+    }
 }
